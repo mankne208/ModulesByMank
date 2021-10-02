@@ -1,2 +1,2 @@
-# Modules-Mank
-1 số mdl tự viết khi đang học javascript
+ 
+1số mdl phèn tự viết khi đang học javascript
