@@ -1,10 +1,9 @@
-
 module.exports.config = {
 	name: "luckyday", // Tên lệnh, được sử dụng trong việc gọi lệnh
 	version: "1.0.0", // phiên bản của module này
 	hasPermssion: 0, // Quyền hạn sử dụng, với 0 là toàn bộ thành viên, 1 là quản trị viên trở lên, 2 là admin/owner
 	credits: "Mank :>", // Công nhận module sở hữu là ai
-	description: "Xem vận", // Thông tin chi tiết về lệnh
+	description: "Xem vận *24h dùng 1 lần", // Thông tin chi tiết về lệnh
 	commandCategory: "Game-sp", // Thuộc vào nhóm nào
 	usages: "luckyday", // Cách sử dụng lệnh
 	cooldowns: 86400, // Thời gian một người có thể lặp lại lệnh
