@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "rankup",
-	version: "1.0.2",
+	version: "1.1.2",
 	hasPermssion: 1,
 	credits: "Mirai Team mod by Mank",
 	description: "Thông báo rankup random gif cho từng nhóm, người dùng",
