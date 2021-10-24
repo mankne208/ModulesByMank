@@ -2,7 +2,7 @@ module.exports.config = {
 	name: "Coffee",
 	version: "1.0.1",
 	hasPermssion: 0,
-	credits: "Mank",
+	credits: "Mank", // Mod từ toilet kikiki
 	description: "Coffee chìu",
 	commandCategory: "hình ảnh",
 	usages: "rank",
