@@ -1,6 +1,6 @@
 module.exports.config = {
 	name: "rankup",
-	version: "1.1.2",
+	version: "1.0.2",
 	hasPermssion: 1,
 	credits: "Mirai Team mod by Mank",
 	description: "Thông báo rankup random gif cho từng nhóm, người dùng",
@@ -20,12 +20,13 @@ module.exports.onLoad = () => {
     const dirMaterial = __dirname + `/cache/rankup/`;// Thư mục dow về
     if (!fs.existsSync(dirMaterial + "cache")) fs.mkdirSync(dirMaterial, { recursive: true });
     if (!fs.existsSync(dirMaterial + "rankup1.gif")) request /*kiem tra file neu k co tu dong down ve */ 
-    ("https://i.imgur.com/guOlrA9.gif").pipe(fs.createWriteStream(dirMaterial + "rankup1.gif")); //link file & ten file khi luu ve
+    ("https://i.imgur.com/QrdwCAa.gif").pipe(fs.createWriteStream(dirMaterial + "rankup1.gif")); //link file & ten file khi luu ve
     if (!fs.existsSync(dirMaterial + "rankup2.gif")) request /*kiem tra file neu k co tu dong down ve */ 
-    ("https://i.imgur.com/IhsfD9V.gif").pipe(fs.createWriteStream(dirMaterial + "rankup2.gif")); //link file & ten file khi luu ve
+    ("https://i.imgur.com/jFo6mha.gif").pipe(fs.createWriteStream(dirMaterial + "rankup2.gif")); //link file & ten file khi luu ve
     if (!fs.existsSync(dirMaterial + "rankup3.gif")) request /*kiem tra file neu k co tu dong down ve */ 
     ("https://i.imgur.com/RioclTB.gif").pipe(fs.createWriteStream(dirMaterial + "rankup3.gif")); //link file & ten file khi luu ve
 }
+// Có sẵn hàm dowload cho newbie không biết thêm gif
 module.exports.handleEvent = async function({ api, event, Currencies, Users, getText }) {
 	var {threadID, senderID } = event;
 	const { createReadStream, existsSync, mkdirSync } = global.nodemodule["fs-extra"];
@@ -78,7 +79,7 @@ module.exports.languages = {
 		"off": "tắt",
 		"on": "bật",
 		"successText": "thành công thông báo rankup!",
-		"levelup": "Trình độ chém gió của {name} đã đạt tới level {level}"
+		"levelup": "Sự chu che của {name} đã đạt tới đỉnh kao level {level}"
 	},
 	"en": {
 		"on": "on",
